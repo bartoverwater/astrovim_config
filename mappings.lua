@@ -20,9 +20,17 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<C-j>"] = { "<esc>", desc = "Remap <C-j> to esc" },
+    ["<C-n>"] = { "<esc>", desc = "Remap <C-j> to esc" },
+  },
+  i = {
+    ["<C-j>"] = { "<c-\\><c-n>", desc = "Terminal normal mode" },
+    ["<C-k>"] = { "<c-\\><c-n>", desc = "Terminal normal mode" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    ["<C-j>"] = { "<c-\\><c-n>", desc = "Terminal normal mode" },
+    ["<C-k>"] = { "<c-\\><c-n>", desc = "Terminal normal mode" },
   },
 }
